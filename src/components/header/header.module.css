@@ -1,55 +1,98 @@
-.Header{
-    width: 100%;
-    border-bottom: 2px solid #373737;
+.Header {
+  width: 100%;
+  border-bottom: 2px solid #373737;
 }
-.Header .headerWrapper{
-    max-width: 80rem;
-    width: 100%;
-    margin: 0 auto;
-    padding: 16px 8px;
+.Header .headerWrapper {
+  max-width: 80rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerNav .ulNav {
+  display: flex;
+  gap: 2rem;
+}
+.ulNav .navLi .linksMenuLi {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.ulNav .navLi .linksMenuLi:hover {
+  color: #8c01fa;
+  transition: 0.3s ease-in-out;
+}
+.headerNav .ulNav .linkLogin {
+  color: #fff;
+  padding: 0.7rem 1.7rem;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+.headerNav .ulNav .linkLogin:hover {
+  color: #000;
+  background: #8c01fa;
+  border: 1px solid #000;
+  transition: 0.3s ease-in-out;
+}
+.headerNav .ulNav .linkRegistro {
+  padding: 0.7rem 1.7rem;
+  color: black;
+  background: #8c01fa;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.headerNav .ulNav .linkRegistro:hover {
+  color: #fff;
+  background: #000;
+  border: 1px solid white;
+  transition: 0.3s ease-in-out;
+}
+#buttonMobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  /* / Menu mobile */
+  .headerNav {
+    display: none;
+  }
+
+  #menuIcons {
+    width: 20px;
+    height: 20px;
+  }
+
+  #buttonMobile {
+    display: block;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    height: 28px;
+    width: 28px;
+  }
+
+  .active .headerNav {
+    height: 100vh;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.headerNav .ulNav{
-display: flex;
-gap: 2rem;
-}
-.headerNav .ulNav .linkA{
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 700;
-}
-.headerNav .ulNav .linkA:hover{
-    color: #8C01FA;
-}
-.headerNav .ulNav .linkLogin{
-    color: #fff;
-    padding: 0.7rem 1.7rem;
-    border: 1px solid #fff;
-    border-radius: 10px;
-}
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    background-color: #000000c5;
+  }
 
-.headerNav .ulNav .linkLogin:hover{
-    color: #000;
-    background:#8C01FA;
-    border: 1px solid #000;
-    transition: 0.3s ease-in-out;
-}
-.headerNav .ulNav .linkRegistro{
-    padding: 0.7rem 1.7rem;
-    color:black;
-    background: #8C01FA;
-    border-radius: 10px;
-    border: 1px solid black;
-}
-.headerNav .ulNav .linkRegistro:hover{
-    color:#fff;
-    background: #000;
-    border: 1px solid white;
-    transition: 0.3s ease-in-out;
-}
-
-@media(max-width: 600px){
-    
+  .ulNav .navLi {
+    padding: 1rem;
+  }
+  .active .ulNav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 1rem;
+  }
+  /* // Menu mobile */
 }

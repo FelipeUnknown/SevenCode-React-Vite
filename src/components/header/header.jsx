@@ -8,13 +8,13 @@ const Header = () => {
                     <img src={logo}></img>
                 </div>
                 <nav className={style.headerNav}>
-                    <ul>
-                        <li><a className={style.linkA}>Inicio</a></li>
-                        <li><a className={style.linkA}>Sobre</a></li>
-                        <li><a className={style.linkA}>linguagem</a></li>
-                        <li><a className={style.linkA}>Documentação</a></li>
-                        <li><a className={style.linkLogin}>Login</a></li>
-                        <li><a className={style.linkRegistro}>Registro</a></li>
+                    <ul className={style.ulNav}>
+                        <li><a className={style.linkA} href="/">Inicio</a></li>
+                        <li><a className={style.linkA} href="/">Sobre</a></li>
+                        <li><a className={style.linkA} href="/">linguagem</a></li>
+                        <li><a className={style.linkA} href="/">Documentação</a></li>
+                        <li><a className={style.linkLogin} href="/">Login</a></li>
+                        <li><a className={style.linkRegistro} href="/">Registro</a></li>
                     </ul>
                 </nav>
             </div>

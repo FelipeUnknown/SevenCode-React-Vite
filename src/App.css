@@ -9,7 +9,7 @@
 }
 
 body {
-  background:var(--color-black);
+  background: linear-gradient(#000000, #010101 );
   font-family: "Inter", arial;
   
 }

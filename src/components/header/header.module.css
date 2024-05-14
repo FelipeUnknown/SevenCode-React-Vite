@@ -1,0 +1,12 @@
+.Header{
+    margin-bottom: 1px solid gray;
+}
+.Header .headerWrapper{
+    display: flex;
+}
+.headerWrapper .headerNav ul{
+    display: flex;
+}
+.headerWrapper .headerNav a{
+    color: #fff;
+}

@@ -25,6 +25,8 @@
   transition: 0.3s ease-in-out;
 }
 .headerNav .ulNav .linkLogin {
+  font-size: 1rem;
+  font-weight: 600;
   color: #fff;
   padding: 0.7rem 1.7rem;
   border: 1px solid #fff;
@@ -32,20 +34,20 @@
 }
 
 .headerNav .ulNav .linkLogin:hover {
-  color: #000;
   background: #8c01fa;
   border: 1px solid #000;
   transition: 0.3s ease-in-out;
 }
 .headerNav .ulNav .linkRegistro {
+  font-size: 1rem;
+  font-weight: 600;
   padding: 0.7rem 1.7rem;
-  color: black;
+  color: #fff;
   background: #8c01fa;
   border-radius: 10px;
   border: 1px solid black;
 }
 .headerNav .ulNav .linkRegistro:hover {
-  color: #fff;
   background: #000;
   border: 1px solid white;
   transition: 0.3s ease-in-out;

@@ -1,48 +1,46 @@
-.Feature{
-    margin: 0 auto;
-    display: flex;
+.Feature {
+  margin: 0 auto;
+  display: flex;
+  padding-bottom: 10rem;
+  
 }
-.Feature .featureWrapper{
-    padding: 1rem 1rem 1rem 1rem;
-    margin: 0 auto;
-    display: flex;
-    gap: 5rem;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 80rem;
+.Feature .featureWrapper {
+  padding: 1rem 1rem 1rem 1rem;
+  margin: 0 auto;
+  display: flex;
+  gap: 5rem;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 80rem;
 }
-.Feature .featureWrapper .featureContent{
-    display: flex;
-    flex-direction: column;
-    gap:3rem;
+.Feature .featureWrapper .featureContent {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
-.featureWrapper .featureContent h2{
-    max-width: 30ch;
-    font-size: 2.25rem;
-    font-weight: 400;
-    color: #fff;
+.featureWrapper .featureContent h2 {
+  max-width: 30ch;
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #fff;
 }
-.featureContent .featureDivBtn .saibaMaisBtn{
-    padding:0.7rem 1.7rem;
-    font-size: 1rem;
-    font-weight: 600;
-    background:#8c01fa;
-    color:#fff;
-    border: 1px solid #000;
-    border-radius: 10px;
+.featureContent .featureDivBtn .saibaMaisBtn {
+  padding: 0.7rem 1.7rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #8c01fa;
+  color: #fff;
+  border: 1px solid #000;
+  border-radius: 10px;
 }
-.featureContent .featureDivBtn .saibaMaisBtn:hover{
-    background: #000;
-    border: 1px solid #fff;
+.featureContent .featureDivBtn .saibaMaisBtn:hover {
+  background: #000;
+  border: 1px solid #fff;
 }
 
-@media(max-width:600px){
-    .Feature .featureWrapper{
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-    .Feature .featureWrapper .featureContent{
-
-    }
-
+@media (max-width: 600px) {
+  .Feature .featureWrapper {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
 }

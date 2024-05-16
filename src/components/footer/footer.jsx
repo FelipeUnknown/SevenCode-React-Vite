@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className={style.Footer}>
       <div className={style.footerWrapper}>
-        <div className={style.content}>
+        <div className={style.footerContent}>
           <div className={style.footerLogoDiv}>
             <img src={footerLogo} className={style.logo}></img>
             <p>
@@ -13,10 +13,22 @@ const Footer = () => {
             </p>
           </div>
           <div className={style.footerInput}>
-            <p>
-              Inscreva-se para saber de novidades do mundo uno. Se inscreva-se
-              abaixo agora!
-            </p>
+            <form>
+              <label>
+                Inscreva-se para saber de novidades do mundo uno. Se inscreva-se
+                abaixo agora!
+              </label>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Digite seu email"
+                  className={style.input}
+                />
+              </div>
+              <div className={style.btnDiv}>
+                <button className={style.footerBtn}>Cadastre-se</button>
+              </div>
+            </form>
           </div>
         </div>
         <div className={style.footerCopy}>

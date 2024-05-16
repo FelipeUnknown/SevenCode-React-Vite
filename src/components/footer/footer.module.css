@@ -1,25 +1,88 @@
 .Footer {
+  padding-top: 3rem;
   width: 100%;
-  background-image: linear-gradient(#0b0b0e, #000);
+  background-image: linear-gradient( #0b0b0e 85%,#101010 15%);
 }
 .Footer .footerWrapper {
   padding: 1rem 1rem 1rem 1rem;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   gap: 5rem;
-  justify-content: space-between;
-  align-items: center;
   max-width: 80rem;
 }
-.content .footerLogoDiv {
+.Footer .footerWrapper .footerContent {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 3rem;
+}
+
+.footerContent .footerLogoDiv {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-.logo{
-    width: 28%;
+.logo {
+  width: 70%;
 }
-.content .footerLogoDiv p {
+.footerContent .footerLogoDiv p {
+  max-width: 25ch;
+  font-size: 1.125rem;
+  font-weight: 500;
   color: #fff;
-  max-width: 30ch;
+}
+.footerInput form{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footerInput label {
+    max-width: 43ch;
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: #fff;
+}
+.input{
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 1.5rem 1rem;
+  background-color: #282828;
+}
+
+.Footer .footerWrapper .footerCopy {
+  display: flex;
+  justify-content: space-between;
+}
+.footerWrapper .footerCopy p{
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+.footerWrapper .footerCopy .footerTerms{
+  display: flex;
+  gap:2rem;
+}
+.footerCopy .footerTerms .linkA{
+  color:#fff;
+  font-size: 0.875;
+  font-weight: 400;
+}
+.btnDiv{
+  padding: 4.7rem 0 0 13rem;
+  position: absolute;
+  display: flex;
+}
+.footerBtn{
+  padding: 0.7rem 1.7rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  border: 1px solid black;
+  border-radius: 10px;
+  background: #8c01fa;
+}
+
+@media(max-width) {
+  
 }

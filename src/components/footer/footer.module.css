@@ -17,12 +17,12 @@
   padding-bottom: 3rem;
 }
 
-.footerContent .footerLogoDiv {
+.footerWrapper .footerContent .footerLogoDiv {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-.logo {
+.footerContent .footerLogoDiv .logo {
   width: 70%;
 }
 .footerContent .footerLogoDiv p {
@@ -31,18 +31,18 @@
   font-weight: 500;
   color: #fff;
 }
-.footerInput form{
+.footerContent .footerInput form{
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-.footerInput label {
+.footerContent .footerInput span {
     max-width: 43ch;
     font-size: 0.875rem;
     font-weight: 300;
     color: #fff;
 }
-.input{
+.footerInput .divInput .input{
   width: 100%;
   border: none;
   border-radius: 10px;
@@ -73,16 +73,20 @@
   position: absolute;
   display: flex;
 }
-.footerBtn{
+.footerContent .footerInput .footerBtn{
   padding: 0.7rem 1.7rem;
   color: #fff;
   font-size: 1rem;
   font-weight: 700;
-  border: 1px solid black;
+  border:1px solid #8c01fa;
   border-radius: 10px;
   background: #8c01fa;
 }
+.footerContent .footerInput .footerBtn:hover{
+  background: #000;
+  border: 1px solid #fff;
+}
 
 @media(max-width) {
-  
+
 }

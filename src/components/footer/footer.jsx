@@ -14,11 +14,11 @@ const Footer = () => {
           </div>
           <div className={style.footerInput}>
             <form>
-              <label>
+              <span>
                 Inscreva-se para saber de novidades do mundo uno. Se inscreva-se
                 abaixo agora!
-              </label>
-              <div>
+              </span>
+              <div className={style.divInput}>
                 <input
                   type="text"
                   placeholder="Digite seu email"
@@ -26,7 +26,7 @@ const Footer = () => {
                 />
               </div>
               <div className={style.btnDiv}>
-                <button className={style.footerBtn}>Cadastre-se</button>
+                <button className={style.footerBtn} href="/">Cadastre-se</button>
               </div>
             </form>
           </div>

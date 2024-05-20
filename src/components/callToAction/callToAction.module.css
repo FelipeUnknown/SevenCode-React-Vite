@@ -1,25 +1,22 @@
 .CallToAction{
     margin:0 auto;
     display: flex;
-    padding: 10rem;
+    padding: 10rem 0;
+    width: 80rem;
 }
 .CallToAction .ctaWrapper{
-    padding: 0rem 1rem 1rem 1rem;
-    margin: 0 auto;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 0 auto ;
     display: flex;
-    gap: 5rem;
-    align-items: center;
     max-width: 80rem;
-    margin: 0 auto;
-    z-index: 3;
 }
 .ctaContainer{
-    border-radius:10px ;
-    padding: 0 1rem;
+    position: absolute;
+    width: 80rem;
     display: flex;
     gap: 5rem;
     justify-content: space-between;
-    align-items: center;
+    border-radius:10px ;
     background: #0000008f;
     backdrop-filter:blur(15px);
 
@@ -27,9 +24,8 @@
 }
 .CallToAction .ctaWrapper::after{
     content: "";
-    position: absolute;
-    height: 350px;
-    width: 880px;
+    height: 400px;
+    width: 1255px;
     background: linear-gradient(90deg, rgba(155,81,224,1) 0%, rgba(48,129,237,1) 100%);
     filter: blur(30px);
     z-index: -1;
@@ -38,19 +34,26 @@
 .CallToAction .ctaWrapper .ctaContent{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap:2rem;
 
 }
 .ctaWrapper .ctaContent h2{
+    max-width: 15ch;
+    font-size: 36px;
+    font-weight: 400;
     color: #fff;
 }
 .ctaWrapper .ctaContent p{
+    font-weight: 400;
+    font-size: 17px;
     max-width: 30ch;
-    color: #fff;
+    color:#C4C4C4;
+    ;
 }
 .ctaBtn{
     border-radius: 10px;
-    padding: 12px 16px;
+    padding: 12px 50px;
+    color: black;
     background-color: #fff;
     border: 1px solid #fff;
 }

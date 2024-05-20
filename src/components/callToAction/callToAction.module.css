@@ -1,16 +1,78 @@
 .CallToAction{
     margin:0 auto;
-    display: flex;
     padding: 10rem 0;
-    width: 80rem;
 }
 .CallToAction .ctaWrapper{
     padding: 1rem 1rem 1rem 1rem;
     margin: 0 auto ;
-    display: flex;
     max-width: 80rem;
 }
 .ctaContainer{
+    position: relative;
+    border-radius: 10px;
+    background:#0000008f;
+}
+.ctaContainer::before{
+    content: "";
+    position: absolute;
+    transform: translateY(25%);
+    right: 0;
+    height: 300px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(155,81,224,1) 0%, rgba(48,129,237,1) 100%);
+    filter: blur(30px);
+    z-index: -1;
+    opacity: 0.7;
+}
+.ctaContent{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    align-items: center;
+}
+.ctaText{
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+}
+.ctaText h2{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 400;
+    max-width: 15ch;
+}
+.ctaText p{
+    color:#C4C4C4;
+    font-size: 17px;
+    font-weight: 400;
+    max-width: 30ch;
+}
+.ctaBtn{
+    padding: 12px 40px;
+    color: #000;
+    background-color: #fff;
+    border:1px solid #fff;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.ctaBtn:hover{
+    color: #fff;
+    border:1px solid #000;
+    background-color: #000;
+    transition: 0.3s ease-in-out;
+}
+@media(max-width:600px) {
+    .ctaContent{
+        flex-direction: column;
+        text-align: center;
+    } 
+}
+
+
+
+
+/* .ctaContainer{
     position: absolute;
     width: 80rem;
     display: flex;
@@ -18,42 +80,17 @@
     justify-content: space-between;
     border-radius:10px ;
     background: #0000008f;
-    backdrop-filter:blur(15px);
+    
 
 
 }
 .CallToAction .ctaWrapper::after{
     content: "";
-    height: 400px;
-    width: 1255px;
+    right: 0;
+    height: 22rem;
+    width: 100%;
     background: linear-gradient(90deg, rgba(155,81,224,1) 0%, rgba(48,129,237,1) 100%);
     filter: blur(30px);
     z-index: -1;
     opacity: 0.7;
-}
-.CallToAction .ctaWrapper .ctaContent{
-    display: flex;
-    flex-direction: column;
-    gap:2rem;
-
-}
-.ctaWrapper .ctaContent h2{
-    max-width: 15ch;
-    font-size: 36px;
-    font-weight: 400;
-    color: #fff;
-}
-.ctaWrapper .ctaContent p{
-    font-weight: 400;
-    font-size: 17px;
-    max-width: 30ch;
-    color:#C4C4C4;
-    ;
-}
-.ctaBtn{
-    border-radius: 10px;
-    padding: 12px 50px;
-    color: black;
-    background-color: #fff;
-    border: 1px solid #fff;
-}
+} */

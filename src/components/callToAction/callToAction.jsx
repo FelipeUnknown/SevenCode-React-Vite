@@ -6,19 +6,19 @@ const CallToAction = () => {
       <div className={style.ctaWrapper}>
         <div className={style.ctaContainer}>
           <div className={style.ctaContent}>
-            <h2>Sistemas feito de Devs para Devs.</h2>
-            <p>
-              Conheça nossos novos recursos, novos commits, novas propostas e
-              muito mais.
-            </p>
-            <div>
-              <a href="/" className={style.ctaBtn}>
-                Registrar
-              </a>
+            <div className={style.ctaText}>
+              <h2>Sistemas feito de Devs para Devs.</h2>
+              <p>
+                Conheça nossos novos recursos, novos commits, novas propostas e
+                muito mais.
+              </p>
+              <div className={style.ctaBtnDiv}>
+                <a className={style.ctaBtn} href="/">Registrar</a>
+              </div>
             </div>
-          </div>
-          <div className={style.ctaImg}>
-            <img src={imgSection3} />
+            <div className={style.ctaImgDiv}>
+              <img className={style.ctaImg} src={imgSection3}/>
+            </div>
           </div>
         </div>
       </div>

@@ -88,5 +88,8 @@
 }
 
 @media(max-width) {
+  .btnDiv{
+    padding-left: 20rem;
+  }
 
 }
